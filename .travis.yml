@@ -1,0 +1,29 @@
+language: go
+
+go:
+  - 1.8
+  - 1.9
+  - tip
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - go: tip
+
+branches:
+  only:
+    - master
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+install:
+  - make install
+
+script:
+  - make test
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code ${TRAVIS_TEST_RESULT}
