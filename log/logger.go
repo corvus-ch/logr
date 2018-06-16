@@ -47,12 +47,26 @@ func Errorf(format string, args ...interface{}) {
 
 // V calls V() of the default logger.
 func V(level int) logr.InfoLogger {
-	return logger.V(level)
+	l := logger.V(level)
+	sl, ok := l.(std.Logger)
+	if ok {
+		sl.SetCallDepth(2)
+		return sl
+	}
+
+	return l
 }
 
 // NewWithPrefix calls NewWithPrefix() of the default logger.
 func NewWithPrefix(prefix string) logr.Logger {
-	return logger.NewWithPrefix(prefix)
+	l := logger.NewWithPrefix(prefix)
+	sl, ok := l.(std.Logger)
+	if ok {
+		sl.SetCallDepth(2)
+		return sl
+	}
+
+	return l
 }
 
 // Print is equivalent to Info()
