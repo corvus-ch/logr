@@ -52,8 +52,8 @@ func Example_callDepth() {
 	log.V(1).Info("Cras justo odio, dapibus ac facilisis.")
 	// Output:
 	// logger_test.go:50: Cras justo odio, dapibus ac facilisis.
-	// adipiscingexample.go:46: Cras justo odio, dapibus ac facilisis.
-	// example.go:46: Cras justo odio, dapibus ac facilisis.
+	// adipiscinglogger_test.go:51: Cras justo odio, dapibus ac facilisis.
+	// logger_test.go:52: Cras justo odio, dapibus ac facilisis.
 }
 
 func setup() *bytes.Buffer {
