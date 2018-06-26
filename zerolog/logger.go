@@ -4,8 +4,8 @@ package zerolog
 import (
 	"fmt"
 
+	"github.com/bketelsen/logr"
 	"github.com/rs/zerolog"
-	"github.com/thockin/logr"
 )
 
 // New creates a new instance of logr.Logger.

@@ -6,7 +6,7 @@ import (
 	"log"
 	"runtime"
 
-	"github.com/thockin/logr"
+	"github.com/bketelsen/logr"
 )
 
 // New creates a new instance of logr.Logger.

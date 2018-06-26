@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thockin/logr"
+	"github.com/bketelsen/logr"
 )
 
 const (

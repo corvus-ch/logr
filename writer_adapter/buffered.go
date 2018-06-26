@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/thockin/logr"
+	"github.com/bketelsen/logr"
 )
 
 // NewBuffered creates a line buffered bufferedWriter which writes lines to the given function.

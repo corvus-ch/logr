@@ -4,7 +4,7 @@ package zap
 import (
 	"fmt"
 
-	"github.com/thockin/logr"
+	"github.com/bketelsen/logr"
 	"go.uber.org/zap"
 )
 
