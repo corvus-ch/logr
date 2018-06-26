@@ -16,10 +16,10 @@ Implementations are provided for:
 - [zerolog by Olivier Poitrey][zerolog]
 
 Each of the above implementation comes with a benchmark. The short version:
-when interested in having controll about the format and destination of the
+when interested in having control about the format and destination of the
 output, go with logrus. If performance is the main concern, go with zerolog.
 
-There is also in [implementation using an internal buffer][buffered].
+There is also an [implementation using an internal buffer][buffered].
 
 The package [log] provides a global logger which aims to be compatible to the
 one provided by `log.Logger`.
