@@ -5,8 +5,8 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0c85b21a5a91e898a958/test_coverage)](https://codeclimate.com/github/corvus-ch/logr/test_coverage)
 [![GoDoc](https://godoc.org/github.com/corvus-ch/logr?status.svg)](https://godoc.org/github.com/corvus-ch/logr)
 
-This library contains a collection of utilites and implementations built around
-the `logr.Logger` interface by [Tim Hockin][thockin].
+This library contains a collection of utilities and implementations built around
+the `logr.Logger` interface by [Brian Ketelsen][bketelsen].
 
 Implementations are provided for:
 
@@ -16,10 +16,10 @@ Implementations are provided for:
 - [zerolog by Olivier Poitrey][zerolog]
 
 Each of the above implementation comes with a benchmark. The short version:
-when interested in having controll about the format and destination of the
+when interested in having control about the format and destination of the
 output, go with logrus. If performance is the main concern, go with zerolog.
 
-There is also in [implementation using an internal buffer][buffered].
+There is also an [implementation using an internal buffer][buffered].
 
 The package [log] provides a global logger which aims to be compatible to the
 one provided by `log.Logger`.
@@ -33,12 +33,11 @@ This library is licenced under [MIT](LICENSE). For information about how to
 contribute to this project, see [CONTRIBUTING.md].
 
 [CONTRIBUTING.md]: https://github.com/corvus-ch/logr/blob/master/CONTRIBUTING.md
+[bketelsen]: https://github.com/bketelsen
 [buffered]: https://godoc.org/github.com/corvus-ch/logr/buffered
 [log.logger]: https://godoc.org/github.com/corvus-ch/logr/log
 [log]: https://godoc.org/github.com/corvus-ch/logr/log
 [logrus]: https://godoc.org/github.com/corvus-ch/logr/logrus
-[thockin]: https://github.com/thockin
 [writer_adapter]: https://godoc.org/github.com/corvus-ch/logr/writer_adapter
 [zap]: https://godoc.org/github.com/corvus-ch/logr/zap
 [zerolog]: https://godoc.org/github.com/corvus-ch/logr/zerolog
-

@@ -31,5 +31,5 @@ c.out: buffered/cover.out log/cover.out logrus/cover.out std/cover.out writer_ad
 
 .PHONY: clean
 clean:
-	rm **/cover.out c.out
+	rm -f **/cover.out c.out
 

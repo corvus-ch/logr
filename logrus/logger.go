@@ -2,8 +2,8 @@
 package logrus
 
 import (
+	"github.com/bketelsen/logr"
 	"github.com/sirupsen/logrus"
-	"github.com/thockin/logr"
 )
 
 // New creates a new instance of logr.Logger.

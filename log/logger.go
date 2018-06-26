@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/bketelsen/logr"
 	"github.com/corvus-ch/logr/std"
-	"github.com/thockin/logr"
 )
 
 var logger logr.Logger

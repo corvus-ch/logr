@@ -3,7 +3,7 @@ package writer_adapter
 import (
 	"io"
 
-	"github.com/thockin/logr"
+	"github.com/bketelsen/logr"
 )
 
 // New creates a writer which directly writes to the given logger function.
