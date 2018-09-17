@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bouk/monkey"
+	"bou.ke/monkey"
 	"github.com/corvus-ch/logr/buffered"
 	test "github.com/corvus-ch/logr/internal"
 	"github.com/corvus-ch/logr/log"
