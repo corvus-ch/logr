@@ -45,7 +45,7 @@ func Example() {
 
 func Example_callDepth() {
 	l := std.New(1, stdlog.New(os.Stdout, "", stdlog.Lshortfile))
-	l.SetCallDepth(4)
+	l.SetCallDepth(3)
 	log.SetLogger(l)
 	log.Error("Cras justo odio, dapibus ac facilisis.")
 	log.NewWithPrefix("adipiscing").Info("Cras justo odio, dapibus ac facilisis.")
